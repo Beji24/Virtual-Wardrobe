@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Outfits"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/alt_cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@id/image_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/alt_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#5cbdea"
+        app:icon="@drawable/ic_baseline_delete_24"
+        app:layout_constraintStart_toStartOf="@id/alt_cardView"
+        app:layout_constraintTop_toTopOf="@id/alt_cardView" />
+
+    <Button
+        android:id="@+id/left_arrow"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#5cbdea"
+        app:icon="@drawable/ic_baseline_keyboard_arrow_left_24"
+        app:layout_constraintBottom_toBottomOf="@id/alt_cardView"
+        app:layout_constraintTop_toTopOf="@id/alt_cardView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/right_arrow"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#5cbdea"
+        app:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="@id/alt_cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/alt_cardView" />
+
+    <Button
+        android:id="@+id/add_new_photo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#5cbdea"
+        app:icon="@drawable/ic_baseline_add_a_photo_24"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/alt_random"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#5cbdea"
+        app:icon="@drawable/ic_baseline_shuffle_24"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_count"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_image_24"
+        app:layout_constraintBottom_toTopOf="@+id/add_new_photo"
+        app:layout_constraintEnd_toStartOf="@id/total_images" />
+
+    <TextView
+        android:id="@+id/total_images"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="1"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/add_new_photo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tshirt_cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/pants_cardView"
+        app:layout_constraintEnd_toStartOf="@+id/hoodie_cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tshirt_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#424242"
+            android:src="@drawable/ic_tshirt" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hoodie_cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/shoes_cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tshirt_cardView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/hoodie_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#424242"
+            android:src="@drawable/ic_hoodie" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pants_cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/random_outfit"
+        app:layout_constraintEnd_toStartOf="@id/shoes_cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tshirt_cardView">
+
+        <ImageView
+            android:id="@+id/pants_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#424242"
+            android:src="@drawable/ic_pants" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shoes_cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/random_outfit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pants_cardView"
+        app:layout_constraintTop_toBottomOf="@id/hoodie_cardView">
+
+        <ImageView
+            android:id="@+id/shoes_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#424242"
+            android:src="@drawable/ic_shoes" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/random_outfit"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#5cbdea"
+        android:visibility="invisible"
+        app:icon="@drawable/ic_baseline_shuffle_24"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5cbdea"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

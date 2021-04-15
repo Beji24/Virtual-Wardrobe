@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_shirts"
+        android:icon="@drawable/ic_tshirt"
+        android:title="Shirts" />
+
+    <item
+        android:id="@+id/navigation_hoodies"
+        android:icon="@drawable/ic_hoodie"
+        android:title="Hoodies" />
+
+    <item
+        android:id="@+id/navigation_outfits"
+        android:icon="@drawable/ic_outfit"
+        android:title="Outfits" />
+
+    <item
+        android:id="@+id/navigation_pants"
+        android:icon="@drawable/ic_pants"
+        android:title="Pants" />
+
+    <item
+        android:id="@+id/navigation_shoes"
+        android:icon="@drawable/ic_shoes"
+        android:title="Shoes" />
+</menu>

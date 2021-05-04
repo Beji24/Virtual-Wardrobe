@@ -1349,40 +1349,24 @@ class Outfits : AppCompatActivity() {
         //test check page icon ----WORKS-----
         if(bottomNavigationView?.menu?.findItem(R.id.navigation_outfits)?.title == "Outfits")
         {
-            Thread {
 
                 //set first image to a random one
                 setRandomImageTshirt()
 
-            }.start()
-
-            Thread {
-
                 //set first image to a random one
                 setRandomImageHoodie()
 
-            }.start()
-
-            Thread {
 
                 //set first image to a random one
                 setRandomImagePants()
 
-            }.start()
-
-            Thread {
 
                 //set first image to a random one
                 setRandomImageShoes()
 
-            }.start()
-
-            Thread {
 
                 //make  random button appear/dissapear
                 checkRandomButton()
-
-            }.start()
 
         }
         else

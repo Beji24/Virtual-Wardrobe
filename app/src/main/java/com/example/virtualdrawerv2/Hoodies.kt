@@ -145,26 +145,6 @@ class Hoodies : AppCompatActivity() {
             true
         }
 
-        //choose new category icon and title
-        bottomNavigationView?.findViewById<View>(R.id.navigation_outfits)?.setOnLongClickListener {
-
-            chooseNavigationIcon("nav_option3",R.id.navigation_outfits)
-            true
-        }
-
-        //choose new category icon and title
-        bottomNavigationView?.findViewById<View>(R.id.navigation_pants)?.setOnLongClickListener {
-
-            chooseNavigationIcon("nav_option4",R.id.navigation_pants)
-            true
-        }
-
-        //choose new category icon and title
-        bottomNavigationView?.findViewById<View>(R.id.navigation_shoes)?.setOnLongClickListener {
-
-            chooseNavigationIcon("nav_option5",R.id.navigation_shoes)
-            true
-        }
 
         //when new image button is clicked
         add_photo?.setOnClickListener {
